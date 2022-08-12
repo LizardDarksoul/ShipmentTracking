@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gamergrotte</groupId>
+  <artifactId>shipment-tracking</artifactId>
+  <version>1.0.0</version>
+  <name>Shipment Tracking</name>
+  <description>Java library for tracking shipments</description>
+  <url>https://github.com/LizardDarksoul/ShipmentTracking</url>
+  <organization>
+    <name>GamerGrotte</name>
+    <url>https://socials.gamergrotte.de</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>felixlerch</id>
+      <name>Felix Lerch</name>
+      <email>felix.lerch@gamergrotte.de</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/LizardDarksoul/ShipmentTracking.git</connection>
+    <developerConnection>scm:git:https://github.com/LizardDarksoul/ShipmentTracking.git</developerConnection>
+    <url>https://github.com/LizardDarksoul/ShipmentTracking</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20220320</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.13</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
